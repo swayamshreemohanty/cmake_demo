@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/RunMe.dir/main.cpp.o -o RunMe  MathBox/libMyMathLib.a 
