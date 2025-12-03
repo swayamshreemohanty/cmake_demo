@@ -1,10 +1,9 @@
 #include <iostream>
-#include "calc.h"
+#include "tools.h"  // We can include this because we linked the library
 
 int main() {
-    int result = add(10, 20); // Calling the function from calc.cpp
-    std::cout << "The result from the other file is: " << result << std::endl;
+    int num = 5;
+    // We are using code from the library
+    std::cout << "5 squared is: " << square_number(num) << std::endl;
     return 0;
 }
-
-

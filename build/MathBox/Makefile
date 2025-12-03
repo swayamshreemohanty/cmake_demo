@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/swayamshree-mohanty/Documents/work/serendipityspace/cmake_demo/build/CMakeFiles /home/swayamshree-mohanty/Documents/work/serendipityspace/cmake_demo/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/swayamshree-mohanty/Documents/work/serendipityspace/cmake_demo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/swayamshree-mohanty/Documents/work/serendipityspace/cmake_demo/build/CMakeFiles /home/swayamshree-mohanty/Documents/work/serendipityspace/cmake_demo/build/MathBox//CMakeFiles/progress.marks
+	cd /home/swayamshree-mohanty/Documents/work/serendipityspace/cmake_demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathBox/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/swayamshree-mohanty/Documents/work/serendipityspace/cmake_demo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/swayamshree-mohanty/Documents/work/serendipityspace/cmake_demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathBox/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,68 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/swayamshree-mohanty/Documents/work/serendipityspace/cmake_demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathBox/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/swayamshree-mohanty/Documents/work/serendipityspace/cmake_demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathBox/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/swayamshree-mohanty/Documents/work/serendipityspace/cmake_demo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named RunMe
+# Convenience name for target.
+MathBox/CMakeFiles/MyMathLib.dir/rule:
+	cd /home/swayamshree-mohanty/Documents/work/serendipityspace/cmake_demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathBox/CMakeFiles/MyMathLib.dir/rule
+.PHONY : MathBox/CMakeFiles/MyMathLib.dir/rule
 
-# Build rule for target.
-RunMe: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RunMe
-.PHONY : RunMe
-
-# fast build rule for target.
-RunMe/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunMe.dir/build.make CMakeFiles/RunMe.dir/build
-.PHONY : RunMe/fast
-
-#=============================================================================
-# Target rules for targets named MyMathLib
-
-# Build rule for target.
-MyMathLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyMathLib
+# Convenience name for target.
+MyMathLib: MathBox/CMakeFiles/MyMathLib.dir/rule
 .PHONY : MyMathLib
 
 # fast build rule for target.
 MyMathLib/fast:
-	$(MAKE) $(MAKESILENT) -f MathBox/CMakeFiles/MyMathLib.dir/build.make MathBox/CMakeFiles/MyMathLib.dir/build
+	cd /home/swayamshree-mohanty/Documents/work/serendipityspace/cmake_demo/build && $(MAKE) $(MAKESILENT) -f MathBox/CMakeFiles/MyMathLib.dir/build.make MathBox/CMakeFiles/MyMathLib.dir/build
 .PHONY : MyMathLib/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+tools.o: tools.cpp.o
+.PHONY : tools.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunMe.dir/build.make CMakeFiles/RunMe.dir/main.cpp.o
-.PHONY : main.cpp.o
+tools.cpp.o:
+	cd /home/swayamshree-mohanty/Documents/work/serendipityspace/cmake_demo/build && $(MAKE) $(MAKESILENT) -f MathBox/CMakeFiles/MyMathLib.dir/build.make MathBox/CMakeFiles/MyMathLib.dir/tools.cpp.o
+.PHONY : tools.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+tools.i: tools.cpp.i
+.PHONY : tools.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunMe.dir/build.make CMakeFiles/RunMe.dir/main.cpp.i
-.PHONY : main.cpp.i
+tools.cpp.i:
+	cd /home/swayamshree-mohanty/Documents/work/serendipityspace/cmake_demo/build && $(MAKE) $(MAKESILENT) -f MathBox/CMakeFiles/MyMathLib.dir/build.make MathBox/CMakeFiles/MyMathLib.dir/tools.cpp.i
+.PHONY : tools.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+tools.s: tools.cpp.s
+.PHONY : tools.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunMe.dir/build.make CMakeFiles/RunMe.dir/main.cpp.s
-.PHONY : main.cpp.s
+tools.cpp.s:
+	cd /home/swayamshree-mohanty/Documents/work/serendipityspace/cmake_demo/build && $(MAKE) $(MAKESILENT) -f MathBox/CMakeFiles/MyMathLib.dir/build.make MathBox/CMakeFiles/MyMathLib.dir/tools.cpp.s
+.PHONY : tools.cpp.s
 
 # Help Target
 help:
@@ -175,10 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyMathLib"
-	@echo "... RunMe"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... tools.o"
+	@echo "... tools.i"
+	@echo "... tools.s"
 .PHONY : help
 
 
@@ -190,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/swayamshree-mohanty/Documents/work/serendipityspace/cmake_demo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

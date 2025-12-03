@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/RunMe.dir/main.cpp.o CMakeFiles/RunMe.dir/calc.cpp.o -o RunMe 
+/usr/bin/c++ CMakeFiles/RunMe.dir/main.cpp.o -o RunMe  MathBox/libMyMathLib.a 
