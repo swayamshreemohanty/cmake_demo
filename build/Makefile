@@ -129,6 +129,30 @@ RunMe/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunMe.dir/build.make CMakeFiles/RunMe.dir/build
 .PHONY : RunMe/fast
 
+calc.o: calc.cpp.o
+.PHONY : calc.o
+
+# target to build an object file
+calc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunMe.dir/build.make CMakeFiles/RunMe.dir/calc.cpp.o
+.PHONY : calc.cpp.o
+
+calc.i: calc.cpp.i
+.PHONY : calc.i
+
+# target to preprocess a source file
+calc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunMe.dir/build.make CMakeFiles/RunMe.dir/calc.cpp.i
+.PHONY : calc.cpp.i
+
+calc.s: calc.cpp.s
+.PHONY : calc.s
+
+# target to generate assembly for a file
+calc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunMe.dir/build.make CMakeFiles/RunMe.dir/calc.cpp.s
+.PHONY : calc.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... RunMe"
+	@echo "... calc.o"
+	@echo "... calc.i"
+	@echo "... calc.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

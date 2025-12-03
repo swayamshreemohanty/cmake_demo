@@ -6,4 +6,8 @@ project(MyFirstCMakeProject)
 
 # 3. The "Recipe": Tell CMake to make an executable file named "RunMe"
 #    using the source file "main.cpp"
-add_executable(RunMe main.cpp)
+add_executable(
+    RunMe 
+    main.cpp
+    calc.cpp
+)
